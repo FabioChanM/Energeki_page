@@ -1,0 +1,482 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Helvetica;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(96, 99, 101);
+}
+:root {
+  --azulito: #77b3d9;
+  --amarillo: #fdb603;
+  --azul: #0a1e3d;
+  --gris: #aaaaaa;
+}
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+/* MENU*/
+header {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(201, 201, 201, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+#iconomenu {
+  display: none;
+}
+.contenedorarriba {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.btn_menu {
+  font-size: 25px;
+  display: none !important;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+nav ul li a {
+  display: inline-block;
+}
+nav ul li a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.5s;
+  font-weight: bold;
+  font-size: 14px;
+}
+nav ul li:hover {
+  color: var(--azulito);
+}
+/*TIME LINE*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.timeline-section {
+  min-height: 100vh;
+  padding: 100px 15px;
+}
+.timeline-section h2 {
+  margin-left: 340px;
+  color: var(--azul);
+  font-size: 50px;
+}
+.timeline-items {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--azulito);
+  left: calc(50% - 1px);
+}
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: var(--azul);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+.timeline-date {
+  font-size: 30px;
+  color: var(--azulito);
+  margin: 6px 0 15px;
+}
+.timeline-date-last {
+  font-size: 30px;
+  color: var(--azulito);
+  margin: 6px 0 15px;
+}
+.timeline-content {
+  background-color: var(--azul);
+  padding: 30px;
+  border-radius: 5px;
+}
+.timeline-content h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.timeline-content p {
+  color: #c8c8c8;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+/*ARTICULO*/
+#parrafo_mision {
+  justify-content: center;
+  align-items: start;
+}
+.mision_vision {
+  text-align: center;
+  margin: auto;
+}
+.mision_vision h2 {
+  color: var(--azul);
+  font-size: 50px;
+}
+#parrafo_mision {
+  display: flex;
+}
+#parrafo_mision figure {
+  max-width: 500px;
+  margin: auto;
+}
+#parrafo_mision figure img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#div_mision {
+  max-width: 600px;
+  text-align: left;
+  line-height: 30px;
+  padding: 10px;
+}
+#div_mision p {
+  color: var(--gris);
+  font-size: 20px;
+}
+#div_mision h3 {
+  color: var(--azulito);
+  font-size: 25px;
+}
+#div_mision h4 {
+  color: var(--azul);
+  font-size: 20px;
+}
+/*CLIENTES Y ALIADOS*/
+.clientes_aliados {
+  text-align: center;
+  margin: auto;
+}
+.clientes_aliados h2 {
+  color: var(--azul);
+  font-size: 50px;
+}
+.imgenes_emmpresas h3 {
+  color: var(--azulito);
+  font-size: 50px;
+}
+.clientes {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.clientes h3 {
+  color: var(--azul);
+}
+.clientes figure {
+  max-width: 400px;
+  margin: auto;
+}
+.clientes figure img {
+  width: 100%;
+  height: 70px;
+}
+
+.aliados {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.aliados figure {
+  max-width: 400px;
+  margin: auto;
+}
+.aliados figure img {
+  width: 100%;
+  height: 50px;
+}
+
+.academia {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.academia figure {
+  max-width: 400px;
+  margin: auto;
+}
+.academia figure img {
+  width: 100%;
+  height: 150px;
+}
+/*Organigrama*/
+.equipo {
+  text-align: center;
+}
+.equipo h2 {
+  color: var(--azul);
+  font-size: 50px;
+}
+#organigrama figure {
+  max-width: 800px;
+  margin: auto;
+}
+#organigrama figure img {
+  width: 100%;
+  /* height: 500px;
+ object-fit: cover;  */
+}
+#integrate_equipo {
+  text-align: center;
+  color: var(--gris);
+}
+#integrate_equipo h3 {
+  color: var(--azulito);
+  font-size: 40px;
+  line-height: 40px;
+}
+#integrate_equipo span {
+  color: var(--azul);
+  font-size: 30px;
+}
+#integrate_equipo h4 {
+  color: var(--azulito);
+  font-weight: bold;
+  font-size: 25px;
+}
+#integrate_equipo p {
+  text-align: center;
+  color: var(--gris);
+  font-size: 20px;
+}
+#integrate_equipo a {
+  text-align: left;
+  text-decoration: none;
+  color: var(--azulito);
+  font-size: 20px;
+}
+#entrenamiento h2 {
+  text-align: center;
+  color: var(--azul);
+  font-size: 50px;
+}
+#entrenamiento figure {
+  max-width: 900px;
+  margin: auto;
+}
+#entrenamiento figure img {
+  width: 100%;
+}
+/* responsive */
+@media screen and (max-width: 820px) {
+  /*MENU*/
+  .logo_energ {
+    max-width: 200px;
+    text-align: left;
+  }
+  .logo_energ img {
+    width: 100%;
+    height: 40px;
+  }
+  #iconomenu {
+    padding: 10px 10px 10px;
+    display: block !important;
+    color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: var(--azulito);
+  }
+  #iconomeno:hover {
+    background-color: var(--azul);
+  }
+  .contenedorarriba {
+    position: relative;
+  }
+  .abrirmenu {
+    left: 0;
+  }
+  nav {
+    position: absolute;
+    top: 120%;
+    left: -110%;
+    width: 100%;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  nav ul li {
+    border-bottom: 1px black dotted;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  nav ul li a {
+    color: var(--azul);
+    display: block;
+  }
+  /*Linea del tiempo */
+  .timeline-section h2 {
+    text-align: center;
+    margin-left: 0px;
+    line-height: 50px;
+    color: var(--azul);
+    font-size: 40px;
+  }
+  .timeline-items::before {
+    left: 5px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 34px;
+  }
+  .timeline-dot {
+    left: 0;
+  }
+  /*MISION Y VISION*/
+  .mision_vision h2 {
+    line-height: 50px;
+    color: var(--azul);
+    font-size: 40px;
+  }
+  #parrafo_mision {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #parrafo_mision figure {
+    max-width: 500px;
+    margin: auto;
+  }
+  #parrafo_mision figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  /*Nuestros clientes */
+  .clientes_aliados h2 {
+    line-height: 40px;
+    color: var(--azul);
+    font-size: 40px;
+  }
+  .equipo h2 {
+    line-height: 40px;
+    color: var(--azul);
+    font-size: 40px;
+  }
+  #organigrama figure {
+    max-width: 800px;
+    margin: auto;
+  }
+  #organigrama figure img {
+    width: 100%;
+  }
+}
+/*FOOTER*/
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer{
+  background-color: #24262b;
+  padding: 80px 0;
+}
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-links h4{
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  border-bottom: 2px solid var(--azulito);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  transition:  all .3s ease;
+  color: var(--azulito);
+}
+.footer-links ul li a:hover{
+  color: #ffffff;
+  padding-left: 6px;
+}
+.social-link a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+
+.social-link a:hover {
+ background-color: var(--azulito);
+}
+.pie_final{
+  font-size: 20px;
+  color: var(--azulito);
+  text-align: center;
+}

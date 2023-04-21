@@ -1,0 +1,277 @@
+@import url(style.css);
+
+:root {
+  --azulito: rgb(119, 179, 217);
+  --amarillo: #fdb603;
+  --azul: rgb(9, 29, 62);
+}
+@media screen and (max-width: 1199px) {
+/* menu */
+.logo_energ {
+  max-width: 200px;
+ text-align: left;
+  }
+.logo_energ img{
+  width: 100%;
+  height: 40px;
+  }
+  #iconomenu{
+   padding: 10px 10px 10px;
+    display: block !important;
+    color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: var(--azulito);
+  }
+  #iconomeno:hover{
+    background-color: var(--azul);
+    
+  }
+  .contenedorarriba {
+    position: relative;
+  }
+  .abrirmenu {
+    left: 0;
+  }
+nav {
+  position: absolute;
+  top: 120%;
+  left: -110%;
+  width: 100%;
+  background-color: white;
+  transition: all 0.5s;
+}
+nav ul {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+nav ul li {
+  border-bottom: 1px black dotted;
+  width: 100%;
+  padding-left: 20px;
+}
+
+nav ul li a {
+  color: var(--azul);
+  display: block;
+}
+.objeto1{
+  text-align: center;
+  margin-left: 20px;
+}
+.filtroazul h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.parrafos{
+  text-align: center;
+  font-size: 20px;
+}
+.botones_slide{
+  text-align: center;
+}
+/*ABOUT US*/
+.what_is{
+  margin: auto;
+  max-width: 500px;
+}
+.what_is p{
+    text-align: center;
+}
+.what_is h3{
+  font-size: 30px;
+}
+.about_us{
+  padding-left: 40px;
+  text-align: center;
+  flex-direction: column;
+}
+#separacion{
+  display: flex;
+}
+.img_us{
+  margin: auto;
+}
+#produccion_2{
+  margin-left: 50px;
+}
+.img_us figure img{
+  height: 200px;
+  width: 200px;
+  margin-left: 0px;
+}
+.caja{
+  margin-left: 0px;
+  margin-top: 40px;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  background-color: var(--azulito);
+  padding: 30px 10px 10px 10px;
+}
+/*PARALAX*/
+  .contenedor_caracteristicas {
+    background-color: rgba(10, 30, 61, 0.6);
+    display: flex;
+    padding: 50px 0 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor_caracteristicas article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor_parallaxs {
+    position: relative;
+    min-height: 1900px;
+    background-image: url(Imagenes/paralax_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+}
+
+/*change in paralax efect*/
+@media screen and (max-width: 600px){
+  .our_service{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--azul);
+    font-size: 30px;
+    height: 40px;
+    justify-content: center;
+    padding-top: 10px;
+    
+    }
+  .contenedor_parallaxs {
+    position: relative;
+    min-height: 1900px;
+    background-image: url(Imagenes/paralax_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .contenedor_caracteristicas {
+    background-color: rgba(10, 30, 61, 0.6);
+    display: flex;
+    padding: 50px 0 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor_caracteristicas article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.footer-row{
+  text-align: center;
+}
+.footer-links{
+  width: 100%;
+  margin-bottom: 30px;
+}
+}
+
+/* IPHONE */
+@media screen and (max-width: 480px) {
+  .botones_slide{
+    flex-direction: row;
+  }
+  .filtroazul h2{
+    line-height: 40px;
+  }
+  /*botones*/
+.btn_morado2 {
+  margin-left: 15px;
+  width: 200px;
+  display: inline-block;
+  border: 1px var(--azulito) solid;
+  background-color: var(--azulito);
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.btn_transparente {
+  width: 200px;
+  display: inline-block;
+  border: 1px white solid;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.what_is{
+  margin-right: 40px;
+  margin-left: 0px;
+  max-width: 300px;
+
+}
+.what_is p{
+    text-align: center;
+}
+.about_us{
+  text-align: center;
+  flex-direction: column;
+}
+#separacion{
+  display: flex;
+}
+.img_us{
+  margin-left: 50px;
+  flex-direction: column;
+}
+
+#produccion_2{
+  margin-top: 50px;
+  margin-left: 0px;
+  height: 100px;
+}
+#produccion_2 img{
+  height: 300px;
+}
+
+.hand{
+  max-width: 250px;
+}
+.idea{
+  max-width: 250px;
+}
+.img_costumer{
+  max-width: 300px;
+  flex-direction: column;
+}
+
+
+
+ }
