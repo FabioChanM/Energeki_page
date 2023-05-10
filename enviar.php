@@ -1,6 +1,6 @@
 <?php
 
-$destino = "hectorcetina@gmail.com";
+$destino = "fabioleon00@gmail.com";
 $asunto = "Contacto desde el sitio web";
 
 
